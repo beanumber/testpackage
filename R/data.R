@@ -1,0 +1,18 @@
+#' Italian Restaurants Dataset
+#' @docType data
+#' @source http://gattonweb.uky.edu/sheather/book/docs/datasets/nyc.csv
+#' @format An object of class spec_tbl_df (inherits from tbl_df, tbl, data.frame) with 168 rows and 7 variables:
+#' \describe{
+#'   \item{restaurant}{name of restaurant}
+#'   \item{price}{price of meal for two with a drink, in 2001 US dollars}
+#'   \item{food}{Zagat ranking on a scale of 0-30}
+#'   \item{east}{is restaurant located east or west of 5th avenue}
+#' }
+#' @examples
+#' # Calculate the mean price
+#' mean(Italian$price)
+#' if (require(dplyr)) {
+#'   dplyr::filter(Italian, price > 30)
+#' }
+
+"Italian"
